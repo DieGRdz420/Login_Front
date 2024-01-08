@@ -14,7 +14,7 @@ import Swal from 'sweetalert2';
 })
 export class LoginService {
 
-  URL: string = "http://localhost:5200/api/";
+  URL: string = "https://nodejs-api-67p8.onrender.com/api/";
 
   currentUserLoginOn: BehaviorSubject<boolean>;
   currentUserData: BehaviorSubject<User>;
