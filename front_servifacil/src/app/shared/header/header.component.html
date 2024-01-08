@@ -1,0 +1,17 @@
+<!-- header.component.html -->
+<nav class="navbar navbar-light bg-light" style="height: 7vh;">
+  <div class="container">
+    <!-- Parte del logo a la izquierda -->
+    <span class="navbar-brand" >
+      <!-- <img src="tu-logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      Mi Sitio -->
+    </span>
+
+    <!-- Información sobre si es admin o no a la derecha -->
+    <div *ngIf="userLoginOn" class="ml-auto">
+      <span class="navbar-text">
+        <b >{{userData?.body?.rol_usuario}}</b>
+      </span>
+    </div>
+  </div>
+</nav>
